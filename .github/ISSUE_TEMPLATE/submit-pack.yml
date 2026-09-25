@@ -1,0 +1,55 @@
+# The Pack Library's submission form. tesria.com/packs/ opens it pre-filled, so the field
+# ids (pack-name, description, category, license) must stay in step with
+# src/scripts/packs.ts in the website repo.
+name: Submit a pack
+description: Offer a wiki pack for the Tesria Pack Library.
+title: "Pack: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. Attach the pack's `.zip` below. Every submission is imported into a fresh Tesria and read before it's listed.
+  - type: input
+    id: pack-name
+    attributes:
+      label: Pack name
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What's in it
+      description: A sentence or two, as it should appear in the library.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [Food and drink, Games, Science and nature, History, Hobbies, Technology, Teams and organizations, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      options: ["CC BY 4.0", "CC BY-SA 4.0", "CC0 (public domain)"]
+    validations:
+      required: true
+  - type: textarea
+    id: file
+    attributes:
+      label: The pack
+      description: Drag the pack's .zip file here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and privacy
+      options:
+        - label: It's my own work, or I have the right to share everything in it, pictures included.
+          required: true
+        - label: It holds no one's personal details.
+          required: true
