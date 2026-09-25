@@ -1,6 +1,6 @@
-# The Pack Library's submission form. tesria.com/packs/ opens it pre-filled, so the field
-# ids (pack-name, description, category, license) must stay in step with
-# src/scripts/packs.ts in the website repo.
+# The Pack Library's submission form. tesria.com/packs/ opens it pre-filled, so the
+# field ids pack-name and description must stay in step with src/scripts/packs.ts
+# in the website repo. GitHub pre-fills only text fields; the dropdowns are chosen here.
 name: Submit a pack
 description: Offer a wiki pack for the Tesria Pack Library.
 title: "Pack: "
